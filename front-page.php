@@ -3,7 +3,7 @@
 
 
         </header>
-        <div id="container">
+        <div id="container" style="overflow:hidden">
             <main id="content" role="main">
 <?php 
 get_header();
@@ -56,6 +56,9 @@ $mobile_browser = wp_is_mobile();
             <div class="contact-title">
                 <h2 style="letter-spacing:5px; font-weight:700" class="hover-effect"> Contact Us!</h2>
             </div>
+            <div class="social-icons">
+                
+            </div>  
             <div class="mainform py-5 align-items-center justify-content-center d-flex">
                 <?php echo do_shortcode('[contact-form-7 id="20" title="Contact form 1"]'); ?>
             </div>

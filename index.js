@@ -1,3 +1,10 @@
+var mobile = false;
+//check user's device
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    mobile = true;
+}
+
+if(!mobile){
 // dots is an array of Dot objects,
 // mouse is an object used to track the X and Y position
    // of the mouse, set with a mousemove event listener below
@@ -65,4 +72,7 @@ function animate() {
 }
 
 // And get it started by calling animate().
-animate();
+    animate();
+    console.log(mobile);
+
+}

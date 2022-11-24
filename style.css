@@ -591,3 +591,8 @@ input, textarea{
 .projects-names{
     max-width: 100%!important;
 }
+
+.social-icons:hover{
+    height: 70px!important;
+    width: 70px!important;
+}

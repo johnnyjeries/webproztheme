@@ -239,3 +239,26 @@ $projects = array(
         'desc' => ''
     )
     );
+
+    $socials = array(
+        'phone' => array(
+            'icon' => '/images/call.png',
+            'link' => '#'
+        ),
+        'whatsapp' => array(
+            'icon' => '/images/whatsapp.png',
+            'link' => '#'
+        ),
+        'linkedin' => array(
+            'icon' => '/images/linkedin (1).png',
+            'link' => '#'
+        ),
+        'instagram' => array(
+            'icon' => '/images/instagram.png',
+            'link' => '#'
+        ),
+        'mail' => array(
+            'icon' => '/images/gmail.png',
+            'link' => '#'
+        )
+        );

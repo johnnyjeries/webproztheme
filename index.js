@@ -4,6 +4,8 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     mobile = true;
 }
 
+let trailClass = "trail";
+
 if(!mobile){
 // dots is an array of Dot objects,
 // mouse is an object used to track the X and Y position
@@ -20,7 +22,7 @@ var Dot = function() {
  this.y = 0;
  this.node = (function(){
    var n = document.createElement("div");
-   n.className = "trail";
+   n.className = trailClass;
    document.body.appendChild(n);
    return n;
  }());
@@ -35,6 +37,8 @@ Dot.prototype.draw = function() {
 // Creates the Dot objects, populates the dots array
 for (var i = 0; i < 12; i++) {
  var d = new Dot();
+ trailClass += "z";    
+ console.log(trailClass);
  dots.push(d);
 }
 
@@ -73,6 +77,22 @@ function animate() {
 
 // And get it started by calling animate().
     animate();
-    console.log(mobile);
-
 }
+
+
+$(document).ready(function(){
+	$(window).scroll(function () {
+			if ($(this).scrollTop() > 50) {
+				$('#back-to-top').fadeIn();
+			} else {
+				$('#back-to-top').fadeOut();
+			}
+		});
+		// scroll body to 0px on click
+		$('#back-to-top').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 400);
+			return false;
+		});
+});

@@ -570,13 +570,6 @@ input, textarea{
     max-height:200px;
 }
 
-.trail { /* className for the trail elements */
-    position: absolute;
-    height: 6px; width: 6px;
-    border-radius: 3px;
-    background: teal;
-  }
-
   nav#MainNav ul li
   {
     width: auto;
@@ -592,7 +585,35 @@ input, textarea{
     max-width: 100%!important;
 }
 
-.social-icons:hover{
-    height: 70px!important;
-    width: 70px!important;
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+    background-color:#04619F!important;
 }
+
+.trail, .trailzzz, .trailzzzzzz, .trailzzzzzzzzz { /* className for the trail elements */
+    position: absolute;
+    height: 10px; width: 10px;
+    border-radius: 3px;
+    border: teal 2px solid;    
+    background: purple; 
+  }
+
+  .trailz, .trailzzzz, .trailzzzzzzz, .trailzzzzzzzzzz{
+    position: absolute;
+    height: 10px; width: 10px;
+    border-radius: 71% 44% 49% 45% / 100% 0% 100% 1% ;
+    border: teal 2px solid; 
+    background: green;
+  }
+
+  .trailzz, .trailzzzzz, .trailzzzzzzzz, .trailzzzzzzzzzzz{
+    border: teal 2px solid;
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 1%;  
+    position: absolute;
+    height: 10px; width: 10px;
+    background: teal
+  }
+

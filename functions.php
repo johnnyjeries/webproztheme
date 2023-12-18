@@ -226,17 +226,17 @@ $projects = array(
     'gamerarabi' => array(
         'name' => 'GAMERARABI',
         'image' => '/images/gamerarabi.png',
-        'desc' => ''
+        'link' => ''
     ),
     'lightframe' => array(
         'name' => 'LIGHTFRAME',
         'image' => '/images/lightframe.png',
-        'desc' => ''
+        'link' => ''
     ),
     'dianatours' => array(
         'name' => 'DIANATOURS',
         'image' => '/images/dianatours.png',
-        'desc' => ''
+        'link' => 'https://dianatours.net/'
     )
     );
 
